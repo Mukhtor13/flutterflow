@@ -55,6 +55,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'bottomsheet',
           path: '/bottomsheet',
           builder: (context, params) => BottomsheetWidget(),
+        ),
+        FFRoute(
+          name: 'AnimationPage',
+          path: '/animationPage',
+          builder: (context, params) => AnimationPageWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
