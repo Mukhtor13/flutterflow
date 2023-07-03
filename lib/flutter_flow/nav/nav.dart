@@ -95,6 +95,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'GridViewPage',
           path: '/gridViewPage',
           builder: (context, params) => GridViewPageWidget(),
+        ),
+        FFRoute(
+          name: 'Spacer',
+          path: '/spacer',
+          builder: (context, params) => SpacerWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
