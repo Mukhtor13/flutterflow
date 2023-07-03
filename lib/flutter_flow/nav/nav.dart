@@ -100,6 +100,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'Spacer',
           path: '/spacer',
           builder: (context, params) => SpacerWidget(),
+        ),
+        FFRoute(
+          name: 'Divider',
+          path: '/divider',
+          builder: (context, params) => DividerWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );

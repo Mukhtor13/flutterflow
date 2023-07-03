@@ -11,3 +11,4 @@ export '/card/card_widget.dart' show CardWidget;
 export '/list_view/list_view_widget.dart' show ListViewWidget;
 export '/grid_view_page/grid_view_page_widget.dart' show GridViewPageWidget;
 export '/spacer/spacer_widget.dart' show SpacerWidget;
+export '/divider/divider_widget.dart' show DividerWidget;
