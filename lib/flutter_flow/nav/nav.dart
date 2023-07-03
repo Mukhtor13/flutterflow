@@ -90,6 +90,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'ListView',
           path: '/listView',
           builder: (context, params) => ListViewWidget(),
+        ),
+        FFRoute(
+          name: 'GridViewPage',
+          path: '/gridViewPage',
+          builder: (context, params) => GridViewPageWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
