@@ -50,6 +50,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'ui_layout_101',
           path: '/uiLayout101',
           builder: (context, params) => UiLayout101Widget(),
+        ),
+        FFRoute(
+          name: 'bottomsheet',
+          path: '/bottomsheet',
+          builder: (context, params) => BottomsheetWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
