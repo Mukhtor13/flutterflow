@@ -65,6 +65,16 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'ContainerPage',
           path: '/containerPage',
           builder: (context, params) => ContainerPageWidget(),
+        ),
+        FFRoute(
+          name: 'RowPage',
+          path: '/rowPage',
+          builder: (context, params) => RowPageWidget(),
+        ),
+        FFRoute(
+          name: 'ColumnPage',
+          path: '/columnPage',
+          builder: (context, params) => ColumnPageWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );

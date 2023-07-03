@@ -4,3 +4,5 @@ export '/ui_layout_101/ui_layout101_widget.dart' show UiLayout101Widget;
 export '/bottomsheet/bottomsheet_widget.dart' show BottomsheetWidget;
 export '/animation_page/animation_page_widget.dart' show AnimationPageWidget;
 export '/container_page/container_page_widget.dart' show ContainerPageWidget;
+export '/row_page/row_page_widget.dart' show RowPageWidget;
+export '/column_page/column_page_widget.dart' show ColumnPageWidget;
