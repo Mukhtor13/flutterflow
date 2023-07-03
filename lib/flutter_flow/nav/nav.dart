@@ -105,6 +105,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'Divider',
           path: '/divider',
           builder: (context, params) => DividerWidget(),
+        ),
+        FFRoute(
+          name: 'TabBar',
+          path: '/tabBar',
+          builder: (context, params) => TabBarWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
