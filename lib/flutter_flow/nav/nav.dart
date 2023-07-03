@@ -80,6 +80,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'Stack',
           path: '/stack',
           builder: (context, params) => StackWidget(),
+        ),
+        FFRoute(
+          name: 'Card',
+          path: '/card',
+          builder: (context, params) => CardWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );

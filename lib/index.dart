@@ -7,3 +7,4 @@ export '/container_page/container_page_widget.dart' show ContainerPageWidget;
 export '/row_page/row_page_widget.dart' show RowPageWidget;
 export '/column_page/column_page_widget.dart' show ColumnPageWidget;
 export '/stack/stack_widget.dart' show StackWidget;
+export '/card/card_widget.dart' show CardWidget;

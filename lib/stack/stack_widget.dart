@@ -81,10 +81,10 @@ class _StackWidgetState extends State<StackWidget> {
                         Align(
                           alignment: AlignmentDirectional(0.99, 1.0),
                           child: FFButtonWidget(
-                            onPressed: () {
-                              print('Button pressed ...');
+                            onPressed: () async {
+                              context.pushNamed('Card');
                             },
-                            text: 'Button',
+                            text: 'Stack',
                             options: FFButtonOptions(
                               height: 40.0,
                               padding: EdgeInsetsDirectional.fromSTEB(
