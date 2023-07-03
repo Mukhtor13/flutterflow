@@ -149,8 +149,8 @@ class _CardWidgetState extends State<CardWidget> {
                 Padding(
                   padding: EdgeInsetsDirectional.fromSTEB(0.0, 50.0, 0.0, 0.0),
                   child: FFButtonWidget(
-                    onPressed: () {
-                      print('Button pressed ...');
+                    onPressed: () async {
+                      context.pushNamed('ListView');
                     },
                     text: 'ListView',
                     options: FFButtonOptions(

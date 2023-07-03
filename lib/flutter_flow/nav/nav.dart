@@ -85,6 +85,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'Card',
           path: '/card',
           builder: (context, params) => CardWidget(),
+        ),
+        FFRoute(
+          name: 'ListView',
+          path: '/listView',
+          builder: (context, params) => ListViewWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
