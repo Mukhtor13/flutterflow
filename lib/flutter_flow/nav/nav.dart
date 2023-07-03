@@ -60,6 +60,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'AnimationPage',
           path: '/animationPage',
           builder: (context, params) => AnimationPageWidget(),
+        ),
+        FFRoute(
+          name: 'ContainerPage',
+          path: '/containerPage',
+          builder: (context, params) => ContainerPageWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
