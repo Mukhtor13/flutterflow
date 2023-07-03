@@ -74,10 +74,10 @@ class _ColumnPageWidgetState extends State<ColumnPageWidget> {
                     ),
                   ),
                   FFButtonWidget(
-                    onPressed: () {
-                      print('Button pressed ...');
+                    onPressed: () async {
+                      context.pushNamed('Stack');
                     },
-                    text: '',
+                    text: 'Stack',
                     options: FFButtonOptions(
                       height: 40.0,
                       padding:

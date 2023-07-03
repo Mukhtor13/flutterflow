@@ -75,6 +75,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'ColumnPage',
           path: '/columnPage',
           builder: (context, params) => ColumnPageWidget(),
+        ),
+        FFRoute(
+          name: 'Stack',
+          path: '/stack',
+          builder: (context, params) => StackWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
