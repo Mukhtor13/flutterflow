@@ -15,3 +15,4 @@ export '/divider/divider_widget.dart' show DividerWidget;
 export '/tab_bar/tab_bar_widget.dart' show TabBarWidget;
 export '/page_view/page_view_widget.dart' show PageViewWidget;
 export '/expandable/expandable_widget.dart' show ExpandableWidget;
+export '/wrap/wrap_widget.dart' show WrapWidget;

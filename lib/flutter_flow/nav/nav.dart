@@ -120,6 +120,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'Expandable',
           path: '/expandable',
           builder: (context, params) => ExpandableWidget(),
+        ),
+        FFRoute(
+          name: 'Wrap',
+          path: '/wrap',
+          builder: (context, params) => WrapWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
