@@ -17,3 +17,4 @@ export '/page_view/page_view_widget.dart' show PageViewWidget;
 export '/expandable/expandable_widget.dart' show ExpandableWidget;
 export '/wrap/wrap_widget.dart' show WrapWidget;
 export '/staggered_view/staggered_view_widget.dart' show StaggeredViewWidget;
+export '/swipeable_stack/swipeable_stack_widget.dart' show SwipeableStackWidget;

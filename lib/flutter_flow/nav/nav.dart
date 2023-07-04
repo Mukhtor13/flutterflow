@@ -130,6 +130,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'StaggeredView',
           path: '/staggeredView',
           builder: (context, params) => StaggeredViewWidget(),
+        ),
+        FFRoute(
+          name: 'SwipeableStack',
+          path: '/swipeableStack',
+          builder: (context, params) => SwipeableStackWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
