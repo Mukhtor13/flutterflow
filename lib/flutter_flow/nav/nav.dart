@@ -135,6 +135,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'SwipeableStack',
           path: '/swipeableStack',
           builder: (context, params) => SwipeableStackWidget(),
+        ),
+        FFRoute(
+          name: 'FlippableCard',
+          path: '/flippableCard',
+          builder: (context, params) => FlippableCardWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
