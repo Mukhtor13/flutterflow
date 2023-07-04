@@ -125,6 +125,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'Wrap',
           path: '/wrap',
           builder: (context, params) => WrapWidget(),
+        ),
+        FFRoute(
+          name: 'StaggeredView',
+          path: '/staggeredView',
+          builder: (context, params) => StaggeredViewWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
