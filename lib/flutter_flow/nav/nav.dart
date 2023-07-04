@@ -150,6 +150,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'FloatingActionButton',
           path: '/floatingActionButton',
           builder: (context, params) => FloatingActionButtonWidget(),
+        ),
+        FFRoute(
+          name: 'Drawer',
+          path: '/drawer',
+          builder: (context, params) => DrawerWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
