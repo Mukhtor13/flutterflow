@@ -110,6 +110,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'TabBar',
           path: '/tabBar',
           builder: (context, params) => TabBarWidget(),
+        ),
+        FFRoute(
+          name: 'PageView',
+          path: '/pageView',
+          builder: (context, params) => PageViewWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
