@@ -140,6 +140,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'FlippableCard',
           path: '/flippableCard',
           builder: (context, params) => FlippableCardWidget(),
+        ),
+        FFRoute(
+          name: 'AppBar',
+          path: '/appBar',
+          builder: (context, params) => AppBarWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );

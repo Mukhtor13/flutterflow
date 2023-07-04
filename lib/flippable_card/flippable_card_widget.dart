@@ -65,7 +65,7 @@ class _FlippableCardWidgetState extends State<FlippableCardWidget> {
                 children: [
                   FlipCard(
                     fill: Fill.fillBack,
-                    direction: FlipDirection.VERTICAL,
+                    direction: FlipDirection.HORIZONTAL,
                     speed: 400,
                     front: Container(
                       width: double.infinity,
