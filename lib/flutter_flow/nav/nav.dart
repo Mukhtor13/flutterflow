@@ -145,6 +145,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'AppBar',
           path: '/appBar',
           builder: (context, params) => AppBarWidget(),
+        ),
+        FFRoute(
+          name: 'FloatingActionButton',
+          path: '/floatingActionButton',
+          builder: (context, params) => FloatingActionButtonWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
