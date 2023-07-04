@@ -23,3 +23,4 @@ export '/app_bar/app_bar_widget.dart' show AppBarWidget;
 export '/floating_action_button/floating_action_button_widget.dart'
     show FloatingActionButtonWidget;
 export '/drawer/drawer_widget.dart' show DrawerWidget;
+export '/end_drawer/end_drawer_widget.dart' show EndDrawerWidget;

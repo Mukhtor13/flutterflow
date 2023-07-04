@@ -155,6 +155,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'Drawer',
           path: '/drawer',
           builder: (context, params) => DrawerWidget(),
+        ),
+        FFRoute(
+          name: 'EndDrawer',
+          path: '/endDrawer',
+          builder: (context, params) => EndDrawerWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
