@@ -115,6 +115,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'PageView',
           path: '/pageView',
           builder: (context, params) => PageViewWidget(),
+        ),
+        FFRoute(
+          name: 'Expandable',
+          path: '/expandable',
+          builder: (context, params) => ExpandableWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
